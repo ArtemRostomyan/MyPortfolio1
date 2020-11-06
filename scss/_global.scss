@@ -115,7 +115,7 @@ $fontFamily: "Gotham-Book";
 
 .info{
 	& .info-box{
-		transform: translate(0px, 50%);
+		transform: translate(0px, 30%);
       opacity: 0;
 		transition: 0.8s ease;
 		&._active{
