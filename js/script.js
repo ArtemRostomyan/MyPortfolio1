@@ -3,6 +3,13 @@ $(document).ready(function() {
       $('.header__burger, .menu').toggleClass('active');
       $('body').toggleClass('lock');
     }),
+    $('a[href*="#"]').on('click', function (e) {
+      e.preventDefault();
+     
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      }, 500, 'linear');
+    }),
    $('.slider').slick({
       dots: true,
       infinite: true,
@@ -155,9 +162,8 @@ function initMap() {
           scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
       }
-    
       setTimeout(() => {
         animOnScroll();
       }, 300);
-    }
-   
+    };
+    
