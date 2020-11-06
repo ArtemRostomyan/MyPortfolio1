@@ -1,6 +1,7 @@
 .adaptiv{
    color: #fff;
-   background: rgb(53, 53, 53) url(../images/adaptiv-bg.jpg) 0 0, no-repeat;
+   background-color: rgb(53, 53, 53);
+   background:  url(../images/adaptiv-bg.jpg) 0 0, no-repeat;
    &__inner{
       min-height: 800px;
       display: flex;

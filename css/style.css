@@ -570,7 +570,8 @@ h6 {
   background-color: #41403e;
   height: 100vh;
   min-height: 480px;
-  background: #4e4e4e url(../images/header-background.jpg) 0 0, no-repeat;
+  background-color: #4e4e4e;
+  background: url(../images/header-background.jpg) 0 0, no-repeat;
   background-size: cover;
   z-index: 50;
 }
@@ -947,7 +948,8 @@ h6 {
 
 .adaptiv {
   color: #fff;
-  background: #353535 url(../images/adaptiv-bg.jpg) 0 0, no-repeat;
+  background-color: #353535;
+  background: url(../images/adaptiv-bg.jpg) 0 0, no-repeat;
 }
 
 .adaptiv__inner {
@@ -1092,7 +1094,8 @@ h6 {
 .forms {
   position: relative;
   min-height: 850px;
-  background: grey url(../images/forms-bg.jpg) 0 0, no-repeat;
+  background-color: #757575;
+  background: url(../images/forms-bg.jpg) 0 0, no-repeat;
 }
 
 .forms .btn {

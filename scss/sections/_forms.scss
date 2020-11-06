@@ -1,7 +1,8 @@
 .forms{
    position: relative;
    min-height: 850px;
-   background: grey url(../images/forms-bg.jpg) 0 0, no-repeat;
+   background-color: rgb(117, 117, 117);
+   background:  url(../images/forms-bg.jpg) 0 0, no-repeat;
    & .btn{
       position: absolute;
       left: 50%;

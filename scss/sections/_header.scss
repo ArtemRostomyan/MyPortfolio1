@@ -3,7 +3,8 @@
    background-color: #41403e;
    height: 100vh;
    min-height: 480px;
-   background: rgb(78, 78, 78) url(../images/header-background.jpg) 0 0, no-repeat;
+   background-color: rgb(78, 78, 78);
+   background:  url(../images/header-background.jpg) 0 0, no-repeat;
    background-size: cover;
    z-index: 50;
    &__title-box{
