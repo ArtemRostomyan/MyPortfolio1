@@ -570,7 +570,7 @@ h6 {
   background-color: #41403e;
   height: 100vh;
   min-height: 480px;
-  background: url(../../images/header-background.jpg) 0 0, no-repeat;
+  background: #4e4e4e url(../images/header-background.jpg) 0 0, no-repeat;
   background-size: cover;
   z-index: 50;
 }
@@ -908,7 +908,7 @@ h6 {
 
 .additionally {
   background-color: #11749e;
-  background: url(../../images/cod.jpg) center;
+  background: url(../images/cod.jpg) center;
   background-attachment: fixed;
 }
 
@@ -947,7 +947,7 @@ h6 {
 
 .adaptiv {
   color: #fff;
-  background: url(../../images/adaptiv-bg.jpg) 0 0, no-repeat;
+  background: #353535 url(../images/adaptiv-bg.jpg) 0 0, no-repeat;
 }
 
 .adaptiv__inner {
@@ -1092,7 +1092,7 @@ h6 {
 .forms {
   position: relative;
   min-height: 850px;
-  background: url(../../images/forms-bg.jpg) 0 0, no-repeat;
+  background: grey url(../images/forms-bg.jpg) 0 0, no-repeat;
 }
 
 .forms .btn {
@@ -1102,6 +1102,7 @@ h6 {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   display: inline-block;
+  border-radius: 5px;
 }
 
 .forms--title {
