@@ -197,6 +197,10 @@ body {
   min-width: 320px;
 }
 
+textarea {
+  resize: none;
+}
+
 body {
   line-height: 1;
   font-family: "Gotham-Book";
@@ -407,6 +411,27 @@ h6 {
     height: 250px;
     width: 100%;
   }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, left top, left bottom, from(#38f4ff), color-stop(100%, #090979), to(#00d4ff));
+  background: linear-gradient(180deg, #38f4ff 0%, #090979 100%, #00d4ff 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38f4ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#38f4ff), color-stop(100%, #090979), to(#00d4ff));
+  background: linear-gradient(180deg, #38f4ff 0%, #090979 100%, #00d4ff 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  -webkit-box-shadow: 0 0 4px 2px #25e0d7;
+          box-shadow: 0 0 4px 2px #25e0d7;
 }
 
 .header__hero {
@@ -810,8 +835,8 @@ h6 {
   font-weight: 500;
   font-size: calc(18px + 7 * ((100vw - 320px) / 1600));
   margin: 15px 0 40px 0;
-  -webkit-transform: translate(0px, 120%);
-          transform: translate(0px, 120%);
+  -webkit-transform: translate(0px, 60%);
+          transform: translate(0px, 60%);
   opacity: 0;
   -webkit-transition: 0.8s ease 0s;
   transition: 0.8s ease 0s;
@@ -828,8 +853,8 @@ h6 {
 .akita__text {
   line-height: 1.3;
   font-size: calc(13px + 2 * ((100vw - 320px) / 1600));
-  -webkit-transform: translate(0px, 120%);
-          transform: translate(0px, 120%);
+  -webkit-transform: translate(0px, 60%);
+          transform: translate(0px, 60%);
   opacity: 0;
   -webkit-transition: 0.8s ease 0s;
   transition: 0.8s ease 0s;
@@ -847,8 +872,8 @@ h6 {
   line-height: 1.3;
   font-size: calc(11px + 4 * ((100vw - 320px) / 1600));
   margin-top: 30px;
-  -webkit-transform: translate(0px, 120%);
-          transform: translate(0px, 120%);
+  -webkit-transform: translate(0px, 60%);
+          transform: translate(0px, 60%);
   opacity: 0;
   -webkit-transition: 0.8s ease 0s;
   transition: 0.8s ease 0s;
@@ -909,8 +934,9 @@ h6 {
 
 .additionally {
   background-color: #11749e;
-  background: url(../images/cod.jpg) center;
+  background: url(../images/cod.jpg) center center no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .additionally-container {
@@ -1185,8 +1211,8 @@ h6 {
   -webkit-transform: translate(0px, 120%);
           transform: translate(0px, 120%);
   opacity: 0;
-  -webkit-transition: 0.8s ease  0s;
-  transition: 0.8s ease  0s;
+  -webkit-transition: all  0.8s ease 0s;
+  transition: all  0.8s ease 0s;
 }
 
 .forms-box__input._active {
@@ -1197,12 +1223,17 @@ h6 {
   transition: 0.8s ease 0.2s;
 }
 
+.forms-box__input:focus {
+  -webkit-box-shadow: 0px 0px 5px 2px #11749e;
+          box-shadow: 0px 0px 5px 2px #11749e;
+}
+
 .forms-box__message {
   -webkit-transform: translate(0px, 120%);
           transform: translate(0px, 120%);
   opacity: 0;
-  -webkit-transition: 0.8s ease 0s;
-  transition: 0.8s ease 0s;
+  -webkit-transition: all  0.8s ease 0s;
+  transition: all  0.8s ease 0s;
 }
 
 .forms-box__message._active {
@@ -1211,6 +1242,11 @@ h6 {
   opacity: 1;
   -webkit-transition: 0.8s ease 0.3s;
   transition: 0.8s ease 0.3s;
+}
+
+.forms-box__message:focus {
+  -webkit-box-shadow: 0px 0px 5px 2px #11749e;
+          box-shadow: 0px 0px 5px 2px #11749e;
 }
 
 .footer {
@@ -1416,7 +1452,7 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: none;
+    padding-left: 0;
   }
 }
 

@@ -31,6 +31,7 @@
          font-family: Gotham-Book;
          font-weight: 400px;
          font-size: 15px;
+         
       }
    }
    &__people{
@@ -41,6 +42,7 @@
    &__input{
       height: 50px;
       width: 30%;
+      
    }
    &__message{
       padding-top: 10px;
@@ -52,21 +54,27 @@
    &__input{
       transform: translate(0px, 120%);
       opacity: 0;
-      transition: 0.8s ease  0s;
+      transition: all  0.8s ease 0s;
       &._active{
          transform: translate(0px, 0px);
          opacity: 1;
          transition: 0.8s ease 0.2s;
       }
+      &:focus{
+         box-shadow: 0px 0px 5px 2px $blue;
+      }
    }
    &__message{
       transform: translate(0px, 120%);
       opacity: 0;
-      transition: 0.8s ease 0s;
+      transition: all  0.8s ease 0s;
       &._active{
          transform: translate(0px, 0px);
          opacity: 1;
          transition: 0.8s ease 0.3s;
+      }
+      &:focus{
+         box-shadow: 0px 0px 5px 2px $blue;
       }
    }
 }

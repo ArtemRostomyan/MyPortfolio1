@@ -1,9 +1,9 @@
 .additionally{
    
    background-color: $blue;
-   background: url(../images/cod.jpg) center ;
+   background: url(../images/cod.jpg) center center no-repeat ;
    background-attachment: fixed;
-
+   background-size: cover;
    &-container{
       
       min-height: 460px;
