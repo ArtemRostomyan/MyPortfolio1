@@ -666,7 +666,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   left: 50%;
-  bottom: 50px;
+  bottom: 60px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
@@ -748,6 +748,7 @@ h6 {
 
 .awesome {
   background-color: #11749e;
+  min-height: 100%;
 }
 
 .awesome--title {
@@ -1065,6 +1066,14 @@ h6 {
   transition: 0.8s ease 0.5s;
 }
 
+.team {
+  min-height: 100%;
+}
+
+.team .sub-text {
+  margin-bottom: 0px;
+}
+
 .team .info-box .title {
   color: rgba(34, 34, 34, 0.18);
 }
@@ -1226,6 +1235,8 @@ h6 {
 .forms-box__input:focus {
   -webkit-box-shadow: 0px 0px 5px 2px #11749e;
           box-shadow: 0px 0px 5px 2px #11749e;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .forms-box__message {
@@ -1247,6 +1258,8 @@ h6 {
 .forms-box__message:focus {
   -webkit-box-shadow: 0px 0px 5px 2px #11749e;
           box-shadow: 0px 0px 5px 2px #11749e;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .footer {
